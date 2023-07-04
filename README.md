@@ -1,23 +1,22 @@
-# research_elk_data
-Elasticsearch Data Retrieval and Storage
+# Elasticsearch Data Retrieval and Storage
 
 This Python script allows you to retrieve data from an Elasticsearch index and store the documents in separate JSON files based on their timestamps.
 Prerequisites
 
 Before running the script, ensure you have the following prerequisites:
 
-    Python 3.x installed on your machine
+    Python 2.7 installed on your machine
     Required Python packages: requests
 
-Install the required package using pip:
+#Install the required package using pip:
 
 pip install requests
 
-Configuration
+#Configuration
 
 In the script, you may need to update the Elasticsearch URL and authentication credentials to match your Elasticsearch instance. Edit the following lines in the get_data_from_elasticsearch function:
 
-python
+#python
 
 base_url = "http://localhost:9200/logstash-p-test-*/_search"
 username = 'elastic'
@@ -28,7 +27,7 @@ Usage
 
 To run the script, use the following command:
 
-bash
+#bash
 
 python script_name.py
 
